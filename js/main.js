@@ -1,24 +1,25 @@
 // Javascript for quiz
 
-console.log(window);
+window.onload = function() {
 
-var points = 0;
+    var points = 0;
 
-document.getElementById("test").onclick = function() {test()};
+    document.getElementById("test").onclick = function() {test()};
 
-function test() {
-    window.location.href="results.html";
-}
+    function test() {
+        window.location.href="results.html";
+    }
 
-document.getElementById("onePoint").onclick = function() {addOnePoint()};
+    document.getElementById("onePoint").onclick = function() {addOnePoint()};
 
-function addOnePoint() {
-    points++;
-    console.log(points);
-}
+    function addOnePoint() {
+        points++;
+        console.log("Hi");
+    }
 
-document.getElementById("totalPoints").onclick = function() {showPoints()};
+    document.getElementById("totalPoints").onclick = function() {showPoints()};
 
-function showPoints() {
-    document.getElementById("totalPoints").textContent = "Not ???";
-}
+    function showPoints() {
+        document.getElementById("totalPoints").innerHTML = "Not ???";
+    }
+};
