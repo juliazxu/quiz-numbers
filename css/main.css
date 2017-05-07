@@ -1,0 +1,37 @@
+.h1{
+    font-size: 5em;
+}
+
+body {
+    font-size: 2em;
+}
+
+.large-container {
+    height: 13em;
+    position: relative
+}
+
+.medium-container {
+    height: 10em;
+    position: relative
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
